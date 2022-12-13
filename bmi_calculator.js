@@ -19,4 +19,4 @@ function calculate_BMI( height , weight){
 };
 
 
-calculate_BMI(1.75 , 70);
+calculate_BMI(1.75 , 70 );
