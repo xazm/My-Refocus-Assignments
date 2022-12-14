@@ -5,7 +5,7 @@ function calculate_BMI( height , weight){
     let result = weight / height_1
     console.log("Height (m) : " + height_1)
     console.log("Weight (kg) : " + weight)
-    //console.log(`Your BMI : ${result}`)
+   
 
    if ( result <= 18.5 ) {
         console.log(`You are Underweight ${result}`)
@@ -19,4 +19,13 @@ function calculate_BMI( height , weight){
 };
 
 
-calculate_BMI(1.75 , 70 );
+calculate_BMI(1.75 , 70 ); // Normal : 22.857142857142858 --- correct
+calculate_BMI(1.75 , 30 ); // Underweight 9.795918367346939 --- correct 
+calculate_BMI(1.75 , 90 ); // verweight: 29.387755102040817 
+calculate_BMI(1.75 , 150 ); // Obese: 48.97959183673469 
+
+
+// 1.75 * 1.75 / 70 = 22.857142857142858
+// 1.75 * 1.75 / 30 = 9.795918367346939
+// 1.75 * 1.75 / 90 ); // verweight: 29.387755102040817
+//1.75 * 1.75 / 150 ); // Obese: 48.97959183673469 
